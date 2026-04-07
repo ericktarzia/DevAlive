@@ -2,7 +2,7 @@
   "name": "devalive",
   "displayName": "DevAlive",
   "description": "Mostra a URL da API e faz ping para indicar se a API está up/slow/down no Explorer.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.60.0"
   },
