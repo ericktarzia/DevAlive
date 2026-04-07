@@ -1,8 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-The format is based on "Keep a Changelog" and this project adheres to semantic versioning.
+### [0.1.1](https://github.com/ericktarzia/DevAlive/compare/v0.0.1...v0.1.1) (2026-04-07)
+
+
+### Bug Fixes
+
+* pipeline ([d89a793](https://github.com/ericktarzia/DevAlive/commit/d89a79357d321a0961204590664ae5c4f86e426d))
 
 ## [0.1.0] - 2026-04-07
 
