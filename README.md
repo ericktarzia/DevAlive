@@ -16,6 +16,7 @@ DevAlive monitors API endpoints from the VS Code Explorer and shows a clear heal
 - Yellow — slow (response time above configured threshold)
 - Red — down
 
+![alt text](image-2.png)
 ![DevAlive](image.png)
 
 ## Features
@@ -76,6 +77,7 @@ DevAlive monitora endpoints de API pelo Explorer do VS Code e exibe um estado cl
 - Amarelo — slow (tempo de resposta acima do limiar configurado)
 - Vermelho — down
 
+![alt text](image-1.png)
 ![DevAlive](image.png)
 
 ## Recursos
@@ -137,9 +139,5 @@ Projeto licenciado sob MIT — veja `LICENSE`.
 - `devalive.pingInterval` — intervalo entre checagens em ms. Padrão: `5000`.
 - `devalive.timeout` — timeout da requisição em ms. Padrão: `2000`.
 - `devalive.slowThreshold` — ms acima do qual é considerado lento. Padrão: `1000`.
-
-### Publicação
-
-- Verifique `publisher`, `version`, `repository`, imagens e `LICENSE` antes de publicar.
 
 ---

@@ -7,7 +7,7 @@
     "vscode": "^1.60.0"
   },
   "main": "./out/extension.js",
-  "icon": "images/icon.svg",
+  "icon": "images/icon.png",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p .",
@@ -126,9 +126,9 @@
       ]
     }
   },
-  "publisher": "your-publisher",
+  "publisher": "ericktarzia",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/devalive.git"
+    "url": "https://github.com/ericktarzia/DevAlive.git"
   }
 }
