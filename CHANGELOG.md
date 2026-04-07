@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/ericktarzia/DevAlive/compare/v0.1.1...v0.2.0) (2026-04-07)
+
+
+### Features
+
+* add packaging script to package.json ([57bbac5](https://github.com/ericktarzia/DevAlive/commit/57bbac52b6e1b206f0c2919b9da15e87ed7c066b))
+
 ### [0.1.1](https://github.com/ericktarzia/DevAlive/compare/v0.0.1...v0.1.1) (2026-04-07)
 
 
