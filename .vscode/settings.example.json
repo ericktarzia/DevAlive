@@ -1,0 +1,10 @@
+{
+  "devalive.endpoints": [
+    { "name": "dev", "url": "http://localhost:3000/health" },
+    { "name": "hml", "url": "http://hml.myapi.local/health" },
+    { "name": "prod", "url": "https://api.example.com/health" }
+  ],
+  "devalive.pingInterval": 5000,
+  "devalive.timeout": 2000,
+  "devalive.slowThreshold": 1000
+}

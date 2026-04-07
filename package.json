@@ -1,0 +1,134 @@
+{
+  "name": "devalive",
+  "displayName": "DevAlive",
+  "description": "Mostra a URL da API e faz ping para indicar se a API está up/slow/down no Explorer.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "./out/extension.js",
+  "icon": "images/icon.svg",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vscode": "^1.1.37",
+    "@types/node": "^18.0.0"
+  },
+  "activationEvents": [
+    "*",
+    "onView:devaliveExplorer",
+    "onCommand:devalive.refresh"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "devalive",
+          "title": "DevAlive",
+          "icon": "resources/green.svg"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "DevAlive",
+      "properties": {
+        "devalive.pingInterval": {
+          "type": "number",
+          "default": 5000,
+          "description": "Intervalo entre pings em milissegundos."
+        },
+        "devalive.timeout": {
+          "type": "number",
+          "default": 2000,
+          "description": "Timeout da requisição em milissegundos."
+        },
+        "devalive.slowThreshold": {
+          "type": "number",
+          "default": 1000,
+          "description": "Tempo (ms) acima do qual a API é considerada lenta."
+        },
+        "devalive.endpoints": {
+          "type": "array",
+          "description": "Lista de endpoints a monitorar. Cada item deve ter 'name' e 'url'.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          },
+          "default": [
+            {
+              "name": "local",
+              "url": "http://localhost:3000/health"
+            }
+          ]
+        }
+      }
+    },
+    "views": {
+      "devalive": [
+        {
+          "id": "devaliveExplorer",
+          "name": "DevAlive"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "devalive.refresh",
+        "title": "DevAlive: Refresh"
+      },
+      {
+        "command": "devalive.openConfig",
+        "title": "DevAlive: Open Config"
+      },
+      {
+        "command": "devalive.addEndpoint",
+        "title": "DevAlive: Add Endpoint"
+      },
+      {
+        "command": "devalive.removeEndpoint",
+        "title": "DevAlive: Remove Endpoint"
+      },
+      {
+        "command": "devalive.openEndpoint",
+        "title": "DevAlive: Open Endpoint in Browser"
+      }
+    ],
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "devalive.openEndpoint",
+          "when": "view == devaliveExplorer",
+          "group": "inline"
+        },
+        {
+          "command": "devalive.removeEndpoint",
+          "when": "view == devaliveExplorer",
+          "group": "inline"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "devalive.openConfig",
+          "when": "view == devaliveExplorer",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "publisher": "your-publisher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/devalive.git"
+  }
+}

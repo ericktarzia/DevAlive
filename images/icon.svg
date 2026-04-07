@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="16" fill="#0b5fff" />
+  <circle cx="64" cy="40" r="12" fill="#22c55e" />
+  <circle cx="48" cy="84" r="12" fill="#f59e0b" />
+  <circle cx="80" cy="84" r="12" fill="#ef4444" />
+  <text x="64" y="110" font-size="14" text-anchor="middle" fill="#ffffff" font-family="Arial">DevAlive</text>
+</svg>
